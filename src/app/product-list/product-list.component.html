@@ -10,7 +10,7 @@
 
     <button type="button" (click)=compartir() >Compartir</button>
 
-    <app-product-alerts [producto]='producto'>
+    <app-product-alerts [producto]="producto" (notify)="onNotify()">
 
     </app-product-alerts>
   </h3>
