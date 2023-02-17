@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import {CardModule} from 'primeng/card';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -13,6 +14,7 @@ import { ProductoComponent } from './producto/producto.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    CardModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])

@@ -1,1 +1,14 @@
-<p>producto works!</p>
+<p-card>
+  <ng-template pTemplate="header">
+    <h3>
+      <a [title]="'Detalles ' + producto.name">
+        {{ producto.name }}
+      </a>
+    </h3>
+  </ng-template>
+  <p *ngIf="producto.description">Descripción: {{ producto.description }}</p>
+  <button type="button">Compartir</button>
+  <ng-template pTemplate="footer">
+    <!--<app-product-alerts [producto]="producto"> </app-product-alerts> -->
+  </ng-template>
+</p-card>
